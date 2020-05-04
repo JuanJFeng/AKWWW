@@ -1,6 +1,6 @@
 # Site Settings
 baseurl: ""
-url: ""
+url: "https://juanjfeng.github.io/AKWWW/"
 exclude: ['README.md']
 
 # Sass/SCSS
