@@ -7,6 +7,7 @@
 
 <title>Alessio Keilty</title>
 <link rel="stylesheet" type="text/css" href="/css/main.css">
+<link rel="stylesheet" href="/css/swiper.min.css">
 <link rel="shortcut icon" type="image/png" href="/favicon.png">
 </head>
 
@@ -58,54 +59,92 @@
 			<div class="container-article">
     <div class="article-title">
 
-        
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+                
+                    
+                        <div class="swiper-slide">
+                            <img class="full-page-img" src="/assets/images/1903_Rottami-Semola_3_004.jpg" alt="image" />
+                        </div>
+                    
+                
+                    
+                        <div class="swiper-slide">
+                            <img class="full-page-img" src="/assets/images/1903_Rottami-Semola_3_005-WEB.jpg" alt="image" />
+                        </div>
+                    
+                
+                    
+                        <div class="swiper-slide">
+                            <img class="full-page-img" src="/assets/images/1906_Castelluccio_02.jpg" alt="image" />
+                        </div>
+                    
+                
+                    
+                        <div class="swiper-slide">
+                            <img class="full-page-img" src="/assets/images/1906_Still-Life_013.jpg" alt="image" />
+                        </div>
+                    
+                
+                    
+                        <div class="swiper-slide">
+                            <img class="full-page-img" src="/assets/images/1908_Lanzarote_40.jpg" alt="image" />
+                        </div>
+                    
+                
+                    
+                        <div class="swiper-slide">
+                            <img class="full-page-img" src="/assets/images/2002_Crespi-Bonsai_5_01.jpg" alt="image" />
+                        </div>
+                    
+                
+                    
+                        <div class="swiper-slide">
+                            <img class="full-page-img" src="/assets/images/Tre_Torri_13.jpg" alt="image" />
+                        </div>
+                    
+                
+                    
+                        <div class="swiper-slide">
+                            <img class="full-page-img" src="/assets/images/Tre_Torri_3-WEB.jpg" alt="image" />
+                        </div>
+                    
+                
+                    
+                        <div class="swiper-slide">
+                            <img class="full-page-img" src="/assets/images/Tre_Torri_4.jpg" alt="image" />
+                        </div>
+                    
+                
+                    
+                        <div class="swiper-slide">
+                            <img class="full-page-img" src="/assets/images/Tre_Torri_5-WEB.jpg" alt="image" />
+                        </div>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+
+            </div>
             
-                    <img src="/assets/images/1903_Rottami-Semola_3_004.jpg" alt="image" />
-            
-        
-            
-                    <img src="/assets/images/1903_Rottami-Semola_3_005-WEB.jpg" alt="image" />
-            
-        
-            
-                    <img src="/assets/images/1906_Castelluccio_02.jpg" alt="image" />
-            
-        
-            
-                    <img src="/assets/images/1906_Still-Life_013.jpg" alt="image" />
-            
-        
-            
-                    <img src="/assets/images/1908_Lanzarote_40.jpg" alt="image" />
-            
-        
-            
-                    <img src="/assets/images/2002_Crespi-Bonsai_5_01.jpg" alt="image" />
-            
-        
-            
-                    <img src="/assets/images/Tre_Torri_13.jpg" alt="image" />
-            
-        
-            
-                    <img src="/assets/images/Tre_Torri_3-WEB.jpg" alt="image" />
-            
-        
-            
-                    <img src="/assets/images/Tre_Torri_4.jpg" alt="image" />
-            
-        
-            
-                    <img src="/assets/images/Tre_Torri_5-WEB.jpg" alt="image" />
-            
-        
-            
-        
-            
-        
-            
-        
-        
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
     </div>
 </div>
 
@@ -131,6 +170,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="/assets/js/swiper.min.js"></script>
 
 <!-- viewport units on mobile -->
 <script>
@@ -138,6 +178,20 @@
 		let vh = window.innerHeight * 0.01;
   		document.documentElement.style.setProperty('--vh', `${vh}px`);
 	});
+</script>
+
+<!-- Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
 </script>
 
 </body>

@@ -5,12 +5,26 @@ layout: default
 <div class="container-article">
     <div class="article-title">
 
-        {% for image in site.static_files %}
-            {% if image.path contains 'images' %}
-                    <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-            {% endif %}
-        {% endfor %}
-        
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+                {% for image in site.static_files %}
+                    {% if image.path contains 'images' %}
+                        <div class="swiper-slide">
+                            <img class="full-page-img" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                        </div>
+                    {% endif %}
+                {% endfor %}
+
+            </div>
+            
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
     </div>
 </div>
 
