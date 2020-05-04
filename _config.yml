@@ -1,6 +1,6 @@
 # Site Settings
 baseurl: ""
-url: " http://tplview.pictures"
+url: ""
 exclude: ['README.md']
 
 # Sass/SCSS
