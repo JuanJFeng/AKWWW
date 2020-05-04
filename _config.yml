@@ -17,5 +17,3 @@ incremental: false
 
 # Remove html extension
 permalink: /:title/
-
-keep_files: [assets/js/swiper.min.js.map]

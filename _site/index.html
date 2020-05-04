@@ -42,10 +42,33 @@
         </div>
 
         <div class="nav-right">
-            <a href="/project" class="">
-                Works
-            </a>
-            
+            <div class="dropdown">
+                <p>Works</p>
+
+                <div class="dropdown-content right-side"> 
+                    <br>
+                    
+                        
+                            <div>
+                                <a href="/pro1/">Editorial 1</a>
+                            </div>
+                        
+                    
+                        
+                            <div>
+                                <a href="/pro2/">Demon</a>
+                            </div>
+                        
+                    
+                        
+                            <div>
+                                <a href="/pro3/">Commercial 2</a>
+                            </div>
+                        
+                    
+                </div>
+            </div>
+
         </div>
 
     </div>
@@ -189,8 +212,8 @@
 <!-- Swiper -->
 <script>
     var swiper = new Swiper('.swiper-container', {
-		slidesPerView: 1,
       	spaceBetween: 30,
+		effect: 'fade',
       	loop: true,
 		pagination: {
 		el: '.swiper-pagination',

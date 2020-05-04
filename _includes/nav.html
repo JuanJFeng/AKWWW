@@ -25,10 +25,21 @@
         </div>
 
         <div class="nav-right">
-            <a href="{{site.baseurl}}/project" class="{% if page.url == '/project' %}current{% endif %}">
-                Works
-            </a>
-            
+            <div class="dropdown">
+                <p>Works</p>
+
+                <div class="dropdown-content right-side"> 
+                    <br>
+                    {% for process-post in site.categories.post %}
+                        {% if process-post.type contains "post" %}
+                            <div>
+                                <a href="{{site.baseurl}}{{process-post.url}}">{{process-post.title}}</a>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+
         </div>
 
     </div>
