@@ -1,7 +1,7 @@
 // typeface
 @font-face {
-	font-family: Titillum Book;
-	src: url('../assets/fonts/TitilliumWeb-Regular.ttf'),
+	font-family: Arial, Helvetica, sans-serif;
+	src: url('../assets/fonts/xxxx.ttf'),
 }
 
 // opentype features
@@ -20,7 +20,7 @@
 }
 
 // variables-font
-$font-stack: Titillum Book, Arial, sans-serif;
+$font-stack: Arial, sans-serif;
 $text-size: 22px;
 $text-size-mobile: 18px;
 
@@ -28,7 +28,7 @@ $text-size-mobile: 18px;
 $line-height: 26px; //unit of measure_height
 $line-height-mobile: 23px; //unit of measure_height
 
-$max-pagewidth: 1600px;
+$max-pagewidth: 1800px;
 $max-textwidth: 710px;
 
 $img-padding-desktop: 70px;
@@ -40,7 +40,7 @@ $tablet: 1024px;
 
 // colors
 $text-color: #000000;
-$link-color-1: #e3988d;
+$link-color-1: #000000;
 $link-color-2: #ff00ff;
 
 // root-element
@@ -104,7 +104,6 @@ header {
 	max-width: $max-pagewidth;
 	padding: $line-height !important;
 	position: fixed;
-	background-color: white;
 	z-index: 99;
 	//height: calc(100vh - #{$line-height}*2);
 
@@ -167,24 +166,24 @@ header {
 // navigation
 .nav {
 	display: block !important;
-
-	.nav-right {
-		display: inline-block;
-
-		a {
-			padding-left: 15px;
-		}
-	}
 }
 
 .nav-top {
 
-	a {
+	.nav-left {
 		display: inline-block;
 		width: 50%;
-		float:left;
+		text-align: left;
+		float: left;
+
+		a {
+			width: max-content;
+			float: initial;
+		}
 	}
+
 	.nav-right {
+		display: inline-block;
 		width: 50%;
 		text-align: right;
 
@@ -195,15 +194,28 @@ header {
 	}
 }
 
-.nav-bottom {
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
 
-	a {
-		color: $text-color !important;
+.dropdown-content {
+	display: none;
+	position: absolute;
+	min-width: 160px;
+	z-index: 1;
+
+	a:hover {
+		text-decoration: underline !important;
 	}
-	
-	.current {
-		color: $link-color-2;
-	}
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover {
+	text-decoration: underline;
 }
 
 // custom-bootstrap
@@ -266,130 +278,6 @@ header {
 			width: 100%;
 		}
 	}
-}
-
-// newsletter
-#mc_embed_signup{
-	background:#fff; 
-	clear:left; 
-	font-family: $font-stack !important;
-	line-height: $line-height !important;
-	max-width: $max-textwidth;
-	margin: auto;
-	margin-top: $line-height*2;
-
-	form {
-		padding: 0 !important;
-
-		h2 {
-			font-weight: normal;
-			margin: 0 !important;
-			font-size: $text-size;
-
-			@media only screen and (max-width: $mobile) {
-				font-size: $text-size-mobile !important;
-				line-height: $line-height-mobile !important;
-			}
-		}
-
-		.mc-field-group {
-			width: 100%;
-			padding-bottom: 0 !important;
-		}
-
-		input {
-			margin-top: 10px;
-			font-size: $text-size !important;
-			outline: 0;
-			border: 2px solid black;
-			border-radius: 0px;
-			padding: 5px 0 !important;
-			text-indent: 1% !important;
-
-			@media only screen and (max-width: $mobile) {
-				font-size: $text-size-mobile !important;
-				line-height: $line-height-mobile !important;
-				border: 1px solid black;
-			}
-		}
-
-		.required.email.mce_inline_error {
-			outline: 0;
-			border: 2px solid black !important;
-			border-radius: 0px;
-			padding: 5px 0 !important;
-
-			@media only screen and (max-width: $mobile) {
-				border: 1px solid black !important;
-			}
-		}
-
-		div.mce_inline_error {
-			font-size: $text-size !important;
-			margin-top: 10px !important;
-			padding: 0!important;
-			color: red !important;
-
-			@media only screen and (max-width: $mobile) {
-				font-size: $text-size-mobile !important;
-				line-height: $line-height-mobile !important;
-			}
-		}
-
-		.clear {
-			margin: 0 !important;
-			padding: 0 !important;
-
-			.response {
-				margin: 0 !important;
-				padding: 0 !important;
-				font-size: $text-size !important;
-				font-weight: normal !important;
-				width: 100%;
-
-				@media only screen and (max-width: $mobile) {
-					font-size: $text-size-mobile !important;
-					line-height: $line-height-mobile !important;
-				}
-			}
-			#mce-success-response {
-				color: $link-color-1 !important;
-			}
-		}
-
-		.button {
-			color: $text-color;
-			border-radius: 0px;
-			background-color: white;
-			margin: 0;
-			border-bottom: 2px solid black;
-			transition: none;
-
-			@media only screen and (max-width: $mobile) {
-				font-size: $text-size-mobile !important;
-				line-height: $line-height-mobile !important;
-				border-bottom: 1px solid black;
-				height: 29px;
-			}
-			
-		}
-		.button:hover {
-			background-color: white;
-			border-bottom: none;
-		}
-	}
-}
-
-.article-title.about {
-	padding-top: 100px !important;
-
-	@media only screen and (max-width: $mobile) {
-		padding-top: $line-height*2 !important;
-	}
-}
-
-.article-text.about {
-	margin-top: $line-height*2;
 }
 
 
