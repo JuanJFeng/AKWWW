@@ -195,6 +195,7 @@ header {
 	}
 }
 
+// navigation dropdown
 .dropdown {
 	position: relative;
 	display: inline-block;
@@ -286,7 +287,6 @@ header {
 }
 
 // Homepage-slider
-
 .swiper-container {
     width: auto;
     height: 100%;
@@ -336,7 +336,15 @@ header {
 	top: 0 !important;
 }
 
+.swiper-button-next {
+	cursor: e-resize !important;
+}
+.swiper-button-prev {
+	cursor: w-resize !important;
+}
+
 .swiper-button-next:after, .swiper-button-prev:after {
+	/* Arrow hidden */
 	content: none !important;
 }
 
