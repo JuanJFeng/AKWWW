@@ -330,7 +330,14 @@ header {
 }
 
 .swiper-button-next, .swiper-button-prev {
-	background-color: blue;
+	background-color: transparent;
+	width: 50% !important;
+	height: 100vh !important;
+	top: 0 !important;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+	content: none !important;
 }
 
 

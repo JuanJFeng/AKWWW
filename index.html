@@ -9,7 +9,7 @@ layout: default
             <div class="swiper-wrapper">
 
                 {% for image in site.static_files %}
-                    {% if image.path contains 'images' %}
+                    {% if image.path contains 'homepage' %}
                         <div class="swiper-slide">
                             <img class="full-page-img" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
                         </div>
@@ -17,7 +17,7 @@ layout: default
                 {% endfor %}
 
             </div>
-            
+
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
             <!-- Add Arrows -->
