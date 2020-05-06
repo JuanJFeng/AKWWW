@@ -326,7 +326,7 @@ header {
 
 .full-page-img{
 	max-height: 100vh;
-	max-width: 100vw;
+	// max-width: 100vw;
 }
 
 .swiper-button-next, .swiper-button-prev {
@@ -334,6 +334,7 @@ header {
 	width: 50% !important;
 	height: 100vh !important;
 	top: 0 !important;
+	outline: none; //hide blue border
 }
 
 .swiper-button-next {
@@ -347,5 +348,6 @@ header {
 	/* Arrow hidden */
 	content: none !important;
 }
+
 
 
