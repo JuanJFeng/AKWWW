@@ -1,5 +1,5 @@
 # Site Settings
-baseurl: "https://juanjfeng.github.io/AKWWW/"
+baseurl: /AKWWW
 url: ""
 exclude: ['README.md']
 
