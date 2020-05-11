@@ -9,11 +9,17 @@ layout: default
             <div class="swiper-wrapper">
 
                 {% for image in site.static_files %}
-                    {% if image.path contains 'homepage' %}
+                    {% if image.basename contains 'white' %}
                         <div class="swiper-slide">
                             <img class="full-page-img" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
                         </div>
                     {% endif %}
+
+                    {% if image.basename contains 'black' %}
+                    <div class="swiper-slide">
+                        <img class="full-page-img" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                    </div>
+                {% endif %}
                 {% endfor %}
 
             </div>
