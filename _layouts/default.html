@@ -61,5 +61,15 @@
     });
 </script>
 
+<!-- Text Color switch -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script>
+    var $clipper = $('.clipper');
+    $(".container-img").each(function() {
+        $clipper.clone().appendTo($(this));
+    });
+    $clipper.remove();
+</script>
+
 </body>
 </html>
