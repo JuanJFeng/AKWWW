@@ -52,9 +52,8 @@ layout: default
 
                     {% for image in site.static_files %}
                         {% if image.path contains 'homepage-mobile' %}
-                            {% if image.basename contains 'white' %}
                                 <div class="swiper-slide">
-                                    <div class="container-img" data-bg="light">
+                                    <div class="container-img">
                                         <img class="full-page-img" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
 
                                         <!-- Add Arrows -->
@@ -62,19 +61,6 @@ layout: default
                                         <div class="swiper-button-prev"></div>
                                     </div>                              
                                 </div>
-                            {% endif %}
-
-                            {% if image.basename contains 'black' %}
-                                <div class="swiper-slide">
-                                    <div class="container-img" data-bg="dark">
-                                        <img class="full-page-img" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-
-                                        <!-- Add Arrows -->
-                                        <div class="swiper-button-next"></div>
-                                        <div class="swiper-button-prev"></div>
-                                    </div>                               
-                                </div>
-                            {% endif %}
                         {% endif %}
                     {% endfor %}
 

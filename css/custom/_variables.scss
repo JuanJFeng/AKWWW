@@ -112,7 +112,7 @@ header {
 	padding: 0;
 	
 	@media only screen and (max-width: $mobile) {
-		padding: $line-height*0.7 !important;
+		padding: 0 !important;
 	}
 
 	.article-title {
@@ -160,6 +160,10 @@ header {
 // navigation
 .nav {
 	display: block !important;
+
+	@media only screen and (max-width: $mobile) {
+		padding: $line-height*0.7 !important;
+	}
 }
 
 .nav-top {
@@ -426,6 +430,10 @@ header {
 	@media only screen and (max-width: $mobile) {
 		display: inline-block !important;
 	}
+
+	.swiper-pagination {
+		width: 100vw;
+	}
 }
 
 .desktop-display {
@@ -433,4 +441,8 @@ header {
 	@media only screen and (max-width: $mobile) {
 		display: none !important;
 	}
+}
+
+.hidden-homepage{
+	display: none !important;
 }

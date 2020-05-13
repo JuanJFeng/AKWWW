@@ -6,7 +6,7 @@
 
                 <div class="nav-left">
                     <div class="dropdown">
-                        <a class="desktop-display" href="{{site.baseurl}}/" class="{% if page.url == '/' %}current{% endif %}">
+                        <a class="desktop-display" href="{{site.baseurl}}/">
                             Alessio Keilty
                         </a>
 
@@ -16,6 +16,9 @@
 
                         <div class="dropdown-content">
                             <br>
+                            <a class="mobile-display {% if page.url == '/' %}hidden-homepage{% endif %}" href="{{site.baseurl}}/">
+                                Back to Home
+                            </a>
                             <p>Photographer</p>
                             <p>Milano</p>
                             <br>
