@@ -1138,7 +1138,10 @@
 <script>
     var swiper = new Swiper('.swiper-container', {
       	spaceBetween: 30,
+		slidesPerView: 1,
 		effect: 'fade',
+		fadeEffect: { crossFade: true },
+		speed: 400,
       	loop: true,
 		pagination: {
 		el: '.swiper-pagination',
