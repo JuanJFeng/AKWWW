@@ -326,9 +326,9 @@ header {
 }
 
 .full-page-img {
-	object-fit: cover;
+	object-fit: cover !important;
 	object-position: center;
-	width: 100%;
+	width: 100% !important;
 	height: 100%;
 	max-height: 100vh;
 
