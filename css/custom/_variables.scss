@@ -349,11 +349,16 @@ header {
 }
 
 .swiper-button-next {
-	cursor: e-resize !important;
+	cursor: e-resize !important; //IE browser
+	cursor: url(../assets/cur/arrow-ri-x1.png), auto !important; //Firefox and img-set no support
+	cursor: -webkit-image-set(url(../assets/cur/arrow-ri-x1.png) 1x, url(../assets/cur/arrow-ri-x2.png) 2x), auto !important;
 	right: 0 !important;
 }
+
 .swiper-button-prev {
-	cursor: w-resize !important;
+	cursor: w-resize !important; //IE browser
+	cursor: url(../assets/cur/arrow-le-x1.png), auto !important; //Firefox and img-set no support
+	cursor: -webkit-image-set(url(../assets/cur/arrow-le-x1.png) 1x, url(../assets/cur/arrow-le-x2.png) 2x), auto !important;
 	left: 0 !important;
 }
 
