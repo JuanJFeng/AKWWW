@@ -310,21 +310,21 @@ header {
 		height: 100vh;
 
 		@media only screen and (max-width: $mobile) {
-			max-height: calc(var(--vh, 1vh) * 100);
+			height: calc(var(--vh, 1vh) * 100);
 		}
 	}
 	&.swiper-slide-active {
 		height: 100vh;
 
 		@media only screen and (max-width: $mobile) {
-			max-height: calc(var(--vh, 1vh) * 100);
+			height: calc(var(--vh, 1vh) * 100);
 		}
 	}
 	&.swiper-slide-next {
 		height: 100vh;
 
 		@media only screen and (max-width: $mobile) {
-			max-height: calc(var(--vh, 1vh) * 100);
+			height: calc(var(--vh, 1vh) * 100);
 		}
 	}
 }
