@@ -49,6 +49,10 @@ html, body {
 	font-kerning: normal;
 	word-spacing: 0.001em;
 
+	@media only screen and (max-width: $mobile) {
+		height: 100%;
+	}
+
 	::-webkit-scrollbar {
         display: none;
     }
@@ -88,6 +92,10 @@ a {
 // start-content
 #page-container {
 	position: relative;
+
+	@media only screen and (max-width: $mobile) {
+		height: 100%;
+	}
 }
 
 header {
@@ -109,10 +117,15 @@ header {
 	
 	@media only screen and (max-width: $mobile) {
 		padding: 0 !important;
+		height: 100%;
 	}
 
 	.article-title {
 		padding-top: 0 !important;
+
+		@media only screen and (max-width: $mobile) {
+			height: 100%;
+		}
 
 		p {
 			max-width: $max-textwidth;
@@ -310,21 +323,21 @@ header {
 		height: 100vh;
 
 		@media only screen and (max-width: $mobile) {
-			height: calc(var(--vh, 1vh) * 100);
+			height: 100%;
 		}
 	}
 	&.swiper-slide-active {
 		height: 100vh;
 
 		@media only screen and (max-width: $mobile) {
-			height: calc(var(--vh, 1vh) * 100);
+			height: 100%;
 		}
 	}
 	&.swiper-slide-next {
 		height: 100vh;
 
 		@media only screen and (max-width: $mobile) {
-			height: calc(var(--vh, 1vh) * 100);
+			height: 100%;
 		}
 	}
 }
@@ -352,7 +365,7 @@ header {
 	outline: none; //hide blue border
 
 	@media only screen and (max-width: $mobile) {
-		max-height: calc(var(--vh, 1vh) * 100);
+		max-height: 100%;
 	}
 }
 
@@ -429,7 +442,7 @@ header {
 
 	@media only screen and (max-width: $mobile) {
 		display: contents;
-		max-height: calc(var(--vh, 1vh) * 100);
+		max-height: 100%;
 	}
 
 	.clipper {
@@ -444,6 +457,7 @@ header {
 	@media only screen and (max-width: $mobile) {
 		display: inline-block !important;
 		width: 100vw;
+		height: 100%;
 	}
 
 	.swiper-pagination {
@@ -460,5 +474,12 @@ header {
 
 .hidden-homepage {
 	display: none !important;
+}
+
+#content-wrap {
+
+	@media only screen and (max-width: $mobile) {
+		height: 100%;
+	}
 }
 
