@@ -22,11 +22,11 @@
 // variables-font
 $font-stack: Arial, sans-serif;
 $text-size: 22px;
-$text-size-mobile: 18px;
+$text-size-mobile: 17px;
 
 // variables-grid
 $line-height: 26px; //unit of measure_height
-$line-height-mobile: 23px; //unit of measure_height
+$line-height-mobile: 22px; //unit of measure_height
 
 $max-pagewidth: 2800px;
 $max-textwidth: 710px;
@@ -171,7 +171,7 @@ header {
 	display: block !important;
 
 	@media only screen and (max-width: $mobile) {
-		padding: $line-height*0.7 !important;
+		padding: $line-height*0.5 $line-height*0.7 !important;
 	}
 }
 
@@ -228,6 +228,16 @@ header {
 
 .dropdown:hover {
 	text-decoration: underline;
+}
+
+.background-dropdown {
+	width: 100vw;
+    height: 100%;
+    position: fixed;
+    background-color: white;
+    left: 0;
+    opacity: 0.5;
+    z-index: -5;
 }
 
 // custom-bootstrap
@@ -483,3 +493,13 @@ header {
 	}
 }
 
+.hidden-bg {
+	display: none !important;
+}
+
+.dropdown:hover .hidden-bg {
+	
+	@media only screen and (min-width: $mobile) {
+		display: block !important;
+	}
+}

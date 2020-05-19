@@ -40,7 +40,7 @@
 <!-- viewport units on mobile -->
 <script>
 	window.addEventListener('resize', () => {
-		let vh = window.innerHeight * 0.01;
+		let vh = document.documentElement.clientHeight * 0.01;
   		document.documentElement.style.setProperty('--vh', `${vh}px`);
 	});
 </script>
@@ -73,6 +73,14 @@
         $clipper.clone().appendTo($(this));
     });
     $clipper.remove();
+</script>
+
+
+<script>
+	var elems = document.getElementsByClassName("show-more");
+	Array.from(elems).forEach(v => v.addEventListener('click', function() {
+	  	this.parentElement.getElementsByClassName('content-bg')[0].classList.toggle('hidden-bg');
+	}));
 </script>
 
 </body>
