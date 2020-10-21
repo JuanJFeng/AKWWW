@@ -1,6 +1,6 @@
 ---
 layout: work04
-title: Still lifes on a table
+title: Still life at home
 meta: 
 source:
 category: post

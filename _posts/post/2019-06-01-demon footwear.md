@@ -1,6 +1,6 @@
 ---
 layout: work06
-title: Demon
+title: Demon footwear
 meta: 
 source:
 category: post
