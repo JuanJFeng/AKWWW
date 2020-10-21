@@ -1,6 +1,6 @@
 ---
-layout: work07
-title: Still life
+layout: work04
+title: Still life on a table
 meta: 
 source:
 category: post

@@ -1,6 +1,6 @@
 ---
 layout: work03
-title: Lava come Lava
+title: Lava come lava
 meta: 
 source:
 category: post
