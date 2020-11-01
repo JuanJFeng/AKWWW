@@ -1,6 +1,6 @@
 # Site Settings
-baseurl: "/AKWWW"
-url: ""
+baseurl: ""
+url: "alessiokeilty.com"
 exclude: ['README.md']
 
 # Sass/SCSS
