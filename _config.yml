@@ -1,6 +1,6 @@
 # Site Settings
 baseurl: ""
-url: "alessiokeilty.com"
+url: "https://alessiokeilty.com/"
 exclude: ['README.md']
 
 # Sass/SCSS
