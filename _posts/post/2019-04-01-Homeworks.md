@@ -1,6 +1,6 @@
 ---
 layout: work04
-title: Still life at home
+title: Homeworks
 meta: 
 source:
 category: post
