@@ -1,7 +1,7 @@
 // typeface
 @font-face {
-	font-family: Arial, Helvetica, sans-serif;
-	src: url('../assets/fonts/xxxx.ttf'),
+	font-family: Neue Haas Grotesk, sans-serif;
+	src: url('../assets/fonts/NHaasGroteskDSPro-55Rg.ttf'),
 }
 
 // opentype features
@@ -20,12 +20,12 @@
 }
 
 // variables-font
-$font-stack: Arial, sans-serif;
-$text-size: 22px;
+$font-stack: Neue Haas Grotesk, Helvetica, sans-serif;
+$text-size: 18px;
 $text-size-mobile: 17px;
 
 // variables-grid
-$line-height: 26px; //unit of measure_height
+$line-height: 24px; //unit of measure_height
 $line-height-mobile: 22px; //unit of measure_height
 
 $max-pagewidth: 2800px;
@@ -128,7 +128,7 @@ header {
 		}
 
 		p {
-			max-width: $max-textwidth;
+			//max-width: $max-textwidth;
 			margin: auto;
 		}
 
@@ -211,6 +211,7 @@ header {
 	display: none;
 	position: absolute;
 	min-width: 160px;
+	width: 50vw;
 	//z-index: 1;
 
 	&.right-side {
@@ -405,10 +406,10 @@ header {
 
 // Text-change color
 [data-bg=light] {
-	color: black !important;
+	color: #fff !important;
 	
 	a {
-		color: $link-color-1 !important;
+		color: #fff !important;
 	
 		&:hover {
 			text-decoration: underline !important;
@@ -417,10 +418,10 @@ header {
 }
   
 [data-bg=dark] {
-	color: $link-color-2 !important;
+	color: #fff !important;
 	
 	a {
-		color: $link-color-2 !important;
+		color: #fff !important;
 	
 		&:hover {
 			text-decoration: underline !important;
@@ -439,7 +440,7 @@ header {
   
 .content {
     // position: fixed;
-	padding: $line-height !important;
+	padding: $line-height *.5 $line-height !important;
 
 	@media only screen and (max-width: $mobile) {
 		padding: 0 !important;
@@ -458,6 +459,7 @@ header {
 
 	.clipper {
 		visibility: visible;
+		mix-blend-mode: exclusion;
 	}
 }
 

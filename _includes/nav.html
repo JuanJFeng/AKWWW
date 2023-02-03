@@ -23,8 +23,11 @@
                                 </a>
                                 <br class="mobile-display {% if page.url == '/' %}hidden-homepage{% endif %}" href="{{site.baseurl}}/">
                                 <br class="mobile-display {% if page.url == '/' %}hidden-homepage{% endif %}" href="{{site.baseurl}}/">
-                                <p>Photographer</p>
-                                <p>Milano</p>
+                                <p>Photographer based in Milan</p>
+                                <p>Extended and commercial Portfolio available upon request</p>
+                                <br>
+                                <p>Selected clients: Bottega Veneta, Diesel, GCDS,</p>
+                                <p>Axel Arigato, Esquire.</p>
                                 <br>
 
                                 <a href="mailto:info@alessiokeilty.com" target="_top">
@@ -39,6 +42,7 @@
                     </div>
                 </div>
 
+                <!--
                 <div class="nav-right">
                     <div class="dropdown show-more">
                         <p>Works</p>
@@ -57,6 +61,21 @@
                         </div>
                     </div>
                 </div>
+                -->
+                <!--
+                <div class="nav-right">
+                    <div class="dropdown show-more">
+                        {% for image in site.static_files %}
+                            {% if image.path contains 'homepage-desktop' %}
+                                 <div>
+                                    <p>{{image.basename}}</p>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+
+                    </div>
+                </div>
+                -->
 
             </div>
 

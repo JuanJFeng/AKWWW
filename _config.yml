@@ -17,3 +17,4 @@ incremental: false
 
 # Remove html extension
 permalink: /:title/
+
