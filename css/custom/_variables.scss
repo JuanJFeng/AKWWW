@@ -466,6 +466,7 @@ header {
 // Mobile
 .mobile-display {
 	display: none !important;
+	color: #fff !important ;
 
 	@media only screen and (max-width: $mobile) {
 		display: inline-block !important;
