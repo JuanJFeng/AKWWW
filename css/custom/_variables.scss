@@ -215,6 +215,10 @@ header {
 	mix-blend-mode: exclusion;
 	//z-index: 1;
 
+	@media only screen and (max-width: $mobile) {
+		width: 100vw;
+	}
+
 	&.right-side {
 		right: 0;
 	}
@@ -236,9 +240,7 @@ header {
 	width: 100vw;
     height: 100%;
     position: fixed;
-    background-color: white;
     left: 0;
-    opacity: 0.5;
 	z-index: -5;
 	top: 0;
 }
