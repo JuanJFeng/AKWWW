@@ -22,7 +22,7 @@
 // variables-font
 $font-stack: Neue Haas Grotesk, Helvetica, sans-serif;
 $text-size: 18px;
-$text-size-mobile: 13px;
+$text-size-mobile: 13.5px;
 
 // variables-grid
 $line-height: 24px; //unit of measure_height
@@ -216,7 +216,7 @@ header {
 	//z-index: 1;
 
 	@media only screen and (max-width: $mobile) {
-		width: 80vw;
+		width: 90vw;
 	}
 
 	&.right-side {
