@@ -1,7 +1,7 @@
 // typeface
 @font-face {
-	font-family: Neue Haas Grotesk, sans-serif;
-	src: url('../assets/fonts/NHaasGroteskDSPro-55Rg.ttf'),
+	//font-family: Neue Haas Grotesk, sans-serif;
+	//src: url('../assets/fonts/NHaasGroteskDSPro-55Rg.ttf'),
 }
 
 // opentype features
@@ -20,7 +20,7 @@
 }
 
 // variables-font
-$font-stack: Neue Haas Grotesk, Helvetica, sans-serif;
+$font-stack: Helvetica, sans-serif;
 $text-size: 18px;
 $text-size-mobile: 13.5px;
 
