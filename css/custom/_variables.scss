@@ -355,7 +355,7 @@ header {
 .full-page-img {
 	object-fit: cover;
 	object-position: center;
-	//width: 100%;
+	width: 100%;
 	height: 100%;
 	//max-height: 100vh;
 
@@ -364,6 +364,20 @@ header {
 		height: auto;
 		margin: 0 auto;
 	}
+}
+.full-vertical-img {
+	object-fit: cover;
+	object-position: center;
+	height: 100%;
+	//max-height: 100vh;
+
+	@media only screen and (max-width: $mobile) {
+		max-width: 100vw;
+		height: auto;
+		margin: 0 auto;
+	}
+}
+
 }
 
 .notafull-page-img {
